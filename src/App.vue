@@ -21,7 +21,7 @@ export default {
         new Promise((resolve) => {
           setTimeout(() => {
             resolve(import("./components/HomePrincipal.vue"));
-          }, 2050);
+          }, 2500);
         })
     ),
   },
@@ -36,6 +36,7 @@ body,
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 * {
   --brand-green: #04b500;
   --brand-blue: #0689b0;
