@@ -7,7 +7,12 @@
     </div>
     <div class="action">
       <img src="@/assets/trash.svg" alt="borrar" @click="remove" />
-      <p :class="{ red: isNegative, green: !isNegative }">
+      <p
+        :class="{
+          red: isNegative,
+          green: !isNegative,
+        }"
+      >
         {{ amountCurrency }}
       </p>
     </div>
@@ -61,29 +66,36 @@ const remove = () => {
   border-radius: 8px;
   box-sizing: border-box;
 }
+
 .movement .content {
   width: 100%;
 }
+
 .movement .action {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: column;
 }
+
 h4,
 p {
   margin: 0;
   padding: 0;
 }
+
 h4 {
   margin-bottom: 8px;
 }
+
 .movement .action img {
   margin-bottom: 16px;
 }
+
 .red {
   color: red;
 }
+
 .green {
   color: green;
 }

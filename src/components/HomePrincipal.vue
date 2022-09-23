@@ -1,4 +1,5 @@
 <template>
+  ``
   <Layout>
     <template #header>
       <Header></Header>
@@ -11,7 +12,7 @@
         :amount="amount"
       >
         <template #graphic>
-          <Graphic />
+          <Graphic :amounts="amounts" />
         </template>
         <template #action>
           <Action />
@@ -45,6 +46,7 @@ export default {
     return {
       label: null,
       amount: null,
+      amounts: [100, 200, 500, 200, -400, -600, -300, 0, 300, 500],
       movements: [
         {
           id: 0,

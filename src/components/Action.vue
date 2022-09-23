@@ -64,7 +64,6 @@ button {
 form {
   font-size: 1.24rem;
   width: 100%;
-  background: #fff;
 }
 
 form .action {
